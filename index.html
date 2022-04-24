@@ -34,11 +34,107 @@
             </div>
 
             <!-- Chosen cities forecast -->
-            <div class="">
+            <div class="card mt-4 mt-md-0 bg-info text-white">
+                <h3 class="card-header bg-info text-light">Today's Forcast:</h3>
+                <div class="container">
+                    <h4 class="ml-2">
+                        <img class="weather-icon" id="today-icon" />
+                        <span class="align-middle" id="city-name">City Name</span>
+                    </h4>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <p class="pl-3"><b>Current Temperature:</b> <span id="current-temp"></span> &#8457; </p>
+                        <p class="pl-3"><b>Humidity:</b> <span id="current-humid"></span> % </p>
+                        <p class="pl-3"><b>Wind:</b> <span id="current-wind"></span> MPH </p>
+                        <p class="pl-3"><b>UV Index:</b> <span id="current-uvi"></span> </p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- 5 day -->
+            <div class="card bg-info mt-4">
+                <h3 class="card-header bg-info text-light">5-Day Forecast:</h3>
+                <div class="container p-3 bg-info">
+                    <div class="row row-cols-1 row-cols-md-5">
+
+                        <!-- day 1 -->
+                        <div class="col">
+                            <div class="card bg-info text-light p-1 mb-3 mb-mb-0">
+                                <p class="badge bagde-light mb-1" id="date-1"></p>
+                                <h4 class="align-middle">
+                                    <img class="weather-icon" id="icon-1">
+                                    <span id="temp-1"></span> &#8457;
+                                </h4>
+                                <p class="mb-1"><b>Temp:</b> <span id="temp-1"></span> &#8457; </p>
+                                <p class="mb-1"><b>Wind:</b> <span id="wind-1"></span> MPH </p>
+                                <p class="mb-1"><b>Hummidity:</b> <span id="humid-1"></span> % </p>
+                            </div>
+                        </div>
+
+                         <!-- day 2 -->
+                         <div class="col">
+                            <div class="card bg-info text-light p-1 mb-3 mb-mb-0">
+                                <p class="badge bagde-light mb-1" id="date-1"></p>
+                                <h4 class="align-middle">
+                                    <img class="weather-icon" id="icon-2">
+                                    <span id="temp-2"></span> &#8457;
+                                </h4>
+                                <p class="mb-1"><b>Temp:</b> <span id="temp-2"></span> &#8457; </p>
+                                <p class="mb-1"><b>Wind:</b> <span id="wind-2"></span> MPH </p>
+                                <p class="mb-1"><b>Hummidity:</b> <span id="humid-2"></span> % </p>
+                            </div>
+                        </div>
+
+                        <!-- day 3 -->
+                        <div class="col">
+                            <div class="card bg-info text-light p-1 mb-3 mb-mb-0">
+                                <p class="badge bagde-light mb-1" id="date-1"></p>
+                                <h4 class="align-middle">
+                                    <img class="weather-icon" id="icon-3">
+                                    <span id="temp-3"></span> &#8457;
+                                </h4>
+                                <p class="mb-1"><b>Temp:</b> <span id="temp-3"></span> &#8457; </p>
+                                <p class="mb-1"><b>Wind:</b> <span id="wind-3"></span> MPH </p>
+                                <p class="mb-1"><b>Hummidity:</b> <span id="humid-3"></span> % </p>
+                            </div>
+                        </div>
+
+                         <!-- day 4 -->
+                         <div class="col">
+                            <div class="card bg-info text-light p-1 mb-3 mb-mb-0">
+                                <p class="badge bagde-light mb-1" id="date-1"></p>
+                                <h4 class="align-middle">
+                                    <img class="weather-icon" id="icon-4">
+                                    <span id="temp-4"></span> &#8457;
+                                </h4>
+                                <p class="mb-1"><b>Temp:</b> <span id="temp-4"></span> &#8457; </p>
+                                <p class="mb-1"><b>Wind:</b> <span id="wind-4"></span> MPH </p>
+                                <p class="mb-1"><b>Hummidity:</b> <span id="humid-4"></span> % </p>
+                            </div>
+                        </div>
+
+                         <!-- day 5 -->
+                         <div class="col">
+                            <div class="card bg-info text-light p-1 mb-3 mb-mb-0">
+                                <p class="badge bagde-light mb-1" id="date-1"></p>
+                                <h4 class="align-middle">
+                                    <img class="weather-icon" id="icon-3">
+                                    <span id="temp-5"></span> &#8457;
+                                </h4>
+                                <p class="mb-1"><b>Temp:</b> <span id="temp-5"></span> &#8457; </p>
+                                <p class="mb-1"><b>Wind:</b> <span id="wind-5"></span> MPH </p>
+                                <p class="mb-1"><b>Hummidity:</b> <span id="humid-5"></span> % </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="script.js"></script>
+
 </body>
+</html>
